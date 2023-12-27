@@ -5,3 +5,40 @@ On va à travers cet exemple mettre en place l'architecture MVC sur le projet.
 
 Par quoi commencer ?
 
+## Contexte
+
+MVC =>
+Model / 
+View / 
+Controller / 
+index.php => page utilisée comme entrée principale du point de vue utilisateur
+        Routeur du projet
+
+### 1ère étape : Mettre en place le routeur / mettre en place la structure de nos fichiers
+
+En fonction de l'URL
+        /index => index.php
+        /products => va afficher la liste des produits
+
+### 2ème étape : Mettre en place les controllers (classes)
+
+Mettre en place la logique PHP
+
+### 3ème étape : Mettre en place les vues (views / tpl.php)
+
+Vues HTML
+
+### 4ème étape : Mettre en place la modélisation de la BDD
+
+MCD / Mocodo / Entités / Relations etc...
+Création de la BDD
+
+### 5ème étape : Créer les modèles qui nous permettront de récupérer les données dans la BDD
+
+Models/Product.php => lié à la table product
+
+### 6ème étape : Appeler les modèles (les instancier) pour donner aux vues les données provenant de la BDD
+
+Passage de paramètres et d'arguments entre le fichier index.php / controllers (paramamètres d'URL) /
+Controller => instancier le modèle pour récupérer les données de la base (5ème étape)
+Controller => appeler la vue en lui passant les données
