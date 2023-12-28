@@ -33,6 +33,15 @@ Mettre en place la logique PHP
 MCD / Mocodo / Entités / Relations etc...
 Création de la BDD
 
+Qu'est-ce que je veux rendre dynamique dans le site ?
+
+products
+--------
+id : unique / auto incrémenté
+title : varchar(50)
+subtitle : varchar(255)
+picture : varchar(255)
+
 ### 5ème étape : Créer les modèles qui nous permettront de récupérer les données dans la BDD
 
 Models/Product.php => lié à la table product
