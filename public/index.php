@@ -8,6 +8,10 @@
 
     require __DIR__ . "/../vendor/autoload.php";
 
+    // require de mes fichiers Controllers
+
+    require __DIR__ . "/../app/Controllers/mainController.php";
+
     $router = new AltoRouter();
     $router->setBasePath("/S05/videos_yannick/S05-restart-FRESHCOFFEESHOP/public");
 
@@ -21,11 +25,18 @@
     // $match va contenir soit un tableau, soit un booléen = false
     $match = $router->match();
 
-    var_dump($match);
-
     if($match !== false) {
-
         $matchRoute = $match['target'];
-        var_dump($matchRoute);
 
+        $controller = $matchRoute['controller'];
+        $method = $matchRoute['method'];
+    } else {
+        // La route n'est pas trouvée : erreur 404
+        var_dump("Erreur 404, aucune route trouvée");
+        die();
     }
+
+    // Dispatcher
+
+    $controller = new $controller();
+    $controller->$method();

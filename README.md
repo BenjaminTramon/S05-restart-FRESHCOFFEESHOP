@@ -20,13 +20,13 @@ En fonction de l'URL
         /index => index.php
         /products => va afficher la liste des produits
 
-### 2ème étape : Mettre en place les controllers (classes)
-
-Mettre en place la logique PHP
-
-### 3ème étape : Mettre en place les vues (views / tpl.php)
+### 2ème étape : Mettre en place les vues (views / tpl.php)
 
 Vues HTML
+
+### 3ème étape : Mettre en place les controllers (classes)
+
+Mettre en place la logique PHP
 
 ### 4ème étape : Mettre en place la modélisation de la BDD
 
