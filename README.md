@@ -44,6 +44,7 @@ picture : varchar(255)
 
 ### 5ème étape : Créer les modèles qui nous permettront de récupérer les données dans la BDD
 
+PDO / Rajouter une class Database qui instancie PDO
 Models/Product.php => lié à la table product
 
 ### 6ème étape : Appeler les modèles (les instancier) pour donner aux vues les données provenant de la BDD
