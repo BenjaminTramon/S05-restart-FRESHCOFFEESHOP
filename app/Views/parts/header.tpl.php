@@ -11,7 +11,7 @@
     <title>Fresh Coffee Shop</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link
@@ -43,12 +43,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-itempx-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="index.html">
+                        <a class="nav-link text-uppercase text-expanded" href="./">
                             Home
                         </a>
                     </li>
                     <li class="nav-itempx-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="products.html">
+                        <a class="nav-link text-uppercase text-expanded" href="./products">
                             Products
                         </a>
                     </li>
