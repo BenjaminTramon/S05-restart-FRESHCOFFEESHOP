@@ -12,6 +12,12 @@
 
     require __DIR__ . "/../app/Controllers/mainController.php";
 
+    // require de mes fichiers Models / Utils
+
+    require __DIR__ . "/../app/Utils/Database.php";
+    require __DIR__ . "/../app/Models/Product.php";
+
+
     $router = new AltoRouter();
     $router->setBasePath("/S05/videos_yannick/S05-restart-FRESHCOFFEESHOP/public");
 

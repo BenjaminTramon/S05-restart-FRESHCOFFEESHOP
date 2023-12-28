@@ -3,14 +3,12 @@
 
         // La représentation sous forme d'objet de ma table dans la BDD : products
 
-        // propriétés
+        // proptiétés
         private $id;
         private $title;
         private $subtitle;
         private $picture;
         private $description;
-
-
 
         // Les méthodes
 
@@ -34,10 +32,12 @@
             $pdoStatement = $pdo->query($sql);
 
             // un tableau d'objets de la class Product
-            $products = $pdoStatement->fetchObject('Product');
+            $product = $pdoStatement->fetchObject('Product');
 
             return $product;
         }
+
+        // Les getters/les setters
 
         /**
          * Get the value of id

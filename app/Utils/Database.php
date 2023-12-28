@@ -1,11 +1,5 @@
 <?php
 
-namespace App\Utils;
-
-use \PDO;
-use \Exception;
-
-
 // Retenir son utilisation  => Database::getPDO()
 // Design Pattern : Singleton
 class Database
@@ -27,7 +21,7 @@ class Database
                 $configData['DB_PASSWORD'],
                 array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING) // Affiche les erreurs SQL à l'écran
             );
-        } catch (Exception $exception) {
+        } catch (\Exception $exception) {
             echo 'Erreur de connexion...<br>';
             echo $exception->getMessage() . '<br>';
             echo '<pre>';
